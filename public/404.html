@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <title>صيد برو | SeaPro</title>
     <script>
-      // GitHub Pages SPA fallback - redirect any deep route to the app root
-      location.replace('/fish/index.html' + location.search + location.hash);
+      var path = location.pathname.replace(/^\/+/, '');
+      location.replace('/' + (path ? '#' + path : ''));
     </script>
   </head>
   <body></body>

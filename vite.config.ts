@@ -5,7 +5,7 @@ import { fileURLToPath, URL } from 'node:url';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/fish/',
+  base: '/',
   server: {
     port: 8080,
     strictPort: true,
